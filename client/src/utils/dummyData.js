@@ -22,7 +22,6 @@ module.exports = Object.freeze({
         {
           "name": "Brian",
           "avatar": "https://reqres.in/img/faces/1-image.jpg",
-          "email": "alex@dashwind.com",
           "amount": 1,
           "date": "2023-10-20T23:59:59.999Z",
           "medicine": "Aspirin"
@@ -30,7 +29,6 @@ module.exports = Object.freeze({
         {
           "name": "Johnson",
           "avatar": "https://reqres.in/img/faces/4-image.jpg",
-          "email": "ereena@dashwind.com",
           "amount": 1,
           "date": "2023-10-19T23:59:59.999Z",
           "medicine": "Ibuprofen"
@@ -38,7 +36,6 @@ module.exports = Object.freeze({
         {
           "name": "Max",
           "avatar": "https://reqres.in/img/faces/3-image.jpg",
-          "email": "jhon@dashwind.com",
           "amount": 1,
           "date": "2023-10-19T23:59:59.999Z",
           "medicine": "Acetaminophen"
@@ -46,7 +43,6 @@ module.exports = Object.freeze({
         {
           "name": "Brian",
           "avatar": "https://reqres.in/img/faces/1-image.jpg",
-          "email": "brian@example.com",
           "amount": 2,
           "date": "2023-10-18T23:59:59.999Z",
           "medicine": "Penicillin"
@@ -54,7 +50,6 @@ module.exports = Object.freeze({
         {
           "name": "Johnson",
           "avatar": "https://reqres.in/img/faces/4-image.jpg",
-          "email": "johnson@example.com",
           "amount": 3,
           "date": "2023-10-17T23:59:59.999Z",
           "medicine": "Amoxicillin"
@@ -62,60 +57,10 @@ module.exports = Object.freeze({
         {
           "name": "Max",
           "avatar": "https://reqres.in/img/faces/3-image.jpg",
-          "email": "max@example.com",
-          "amount": 4,
-          "date": "2023-10-16T23:59:59.999Z",
-          "medicine": "Erythromycin"
-        },
-        {
-          "name": "Brian",
-          "avatar": "https://reqres.in/img/faces/1-image.jpg",
-          "email": "alex@dashwind.com",
-          "amount": 1,
-          "date": "2023-10-20T23:59:59.999Z",
-          "medicine": "Aspirin"
-        },
-        {
-          "name": "Johnson",
-          "avatar": "https://reqres.in/img/faces/4-image.jpg",
-          "email": "ereena@dashwind.com",
-          "amount": 1,
-          "date": "2023-10-19T23:59:59.999Z",
-          "medicine": "Ibuprofen"
-        },
-        {
-          "name": "Max",
-          "avatar": "https://reqres.in/img/faces/3-image.jpg",
-          "email": "jhon@dashwind.com",
-          "amount": 1,
-          "date": "2023-10-19T23:59:59.999Z",
-          "medicine": "Acetaminophen"
-        },
-        {
-          "name": "Brian",
-          "avatar": "https://reqres.in/img/faces/1-image.jpg",
-          "email": "brian@example.com",
-          "amount": 2,
-          "date": "2023-10-18T23:59:59.999Z",
-          "medicine": "Penicillin"
-        },
-        {
-          "name": "Johnson",
-          "avatar": "https://reqres.in/img/faces/4-image.jpg",
-          "email": "johnson@example.com",
-          "amount": 3,
-          "date": "2023-10-17T23:59:59.999Z",
-          "medicine": "Amoxicillin"
-        },
-        {
-          "name": "Max",
-          "avatar": "https://reqres.in/img/faces/3-image.jpg",
-          "email": "max@example.com",
           "amount": 4,
           "date": "2023-10-16T23:59:59.999Z",
           "medicine": "Erythromycin"
         }
       ]
-      
       
 });

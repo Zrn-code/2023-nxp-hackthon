@@ -35,7 +35,12 @@ const routes = [
     name: 'Restorage', // name that appear in Sidebar
   },
   {
-    path: '/app/transactions', // url
+    path: '/app/self-history', // url
+    icon: <CurrencyDollarIcon className={iconClasses}/>, // icon component
+    name: 'Self History', // name that appear in Sidebar
+  },
+  {
+    path: '/app/doseplan', // url
     icon: <TableCellsIcon className={iconClasses}/>, // icon component
     name: 'Dose Plan', // name that appear in Sidebar
   },

@@ -10,7 +10,7 @@ const TopSideButtons = ({removeFilter, applyFilter, applySearch}) => {
 
     const [filterParam, setFilterParam] = useState("")
     const [searchText, setSearchText] = useState("")
-    const locationFilters = ["Paris", "London", "Canada", "Peru", "Tokyo"]
+    const locationFilters = ["Brian","Max","Johnson"]
 
     const showFiltersAndApply = (params) => {
         applyFilter(params)
@@ -62,13 +62,13 @@ function Transactions(){
     }
 
     const applyFilter = (params) => {
-        let filteredTransactions = RECENT_TRANSACTIONS.filter((t) => {return t.location === params})
+        let filteredTransactions = RECENT_TRANSACTIONS.filter((t) => {return t.name === params})
         setTrans(filteredTransactions)
     }
 
     // Search according to name
     const applySearch = (value) => {
-        let filteredTransactions = RECENT_TRANSACTIONS.filter((t) => {return t.email.toLowerCase().includes(value.toLowerCase()) ||  t.email.toLowerCase().includes(value.toLowerCase())})
+        let filteredTransactions = RECENT_TRANSACTIONS.filter((t) => {return t.name.toLowerCase().includes(value.toLowerCase()) ||  t.name.toLowerCase().includes(value.toLowerCase())})
         setTrans(filteredTransactions)
     }
 
@@ -105,6 +105,7 @@ function Transactions(){
                                             </div>
                                         </div>
                                     </td>
+                                    <td>{l.medicine}</td>
                                     <td>{l.amount}</td>
                                     <td>{moment(l.date).format("D MMM")}</td>
                                     </tr>
