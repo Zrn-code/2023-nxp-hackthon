@@ -43,6 +43,11 @@ const routes = [
     path: '/app/doseplan', // url
     icon: <TableCellsIcon className={iconClasses}/>, // icon component
     name: 'Dose Plan', // name that appear in Sidebar
+  },
+  {
+    path: '/app/blank',
+    icon: <DocumentIcon className={submenuIconClasses}/>,
+    name: 'Play Ground',
   },/*
   {
     path: '/app/charts', // url

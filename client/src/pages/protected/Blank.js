@@ -1,27 +1,38 @@
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { setPageTitle } from '../../features/common/headerSlice'
-
+import TitleCard from "../../components/Cards/TitleCard"
 import DocumentIcon  from '@heroicons/react/24/solid/DocumentIcon'
+import { getDatabase, ref, onValue } from "firebase/database";
+import { database } from '../../App'
 
-function InternalPage(){
+import { useState } from "react";
+function InternalPage() {
+  const dispatch = useDispatch();
+  const [medi_data, setData] = useState(null); // 初始化数据状态为null
 
-    const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(setPageTitle({ title: "Page Title" }));
+  }, []);
 
-    useEffect(() => {
-        dispatch(setPageTitle({ title : "Page Title"}))
-      }, [])
-      
-    return(
-        <div className="hero h-4/5 bg-base-200">
-            <div className="hero-content text-accent text-center">
-                <div className="max-w-md">
-                <DocumentIcon className="h-48 w-48 inline-block"/>
-                <h1 className="text-5xl mt-2 font-bold">Blank Page</h1>
-                </div>
-            </div>
-        </div>
-    )
+  useEffect(() => {
+  const starCountRef = ref(database, '/');
+
+  onValue(starCountRef, (snapshot) => {
+    const data = snapshot.val();
+    console.log(data);
+    setData(data);
+    //setData(data); // 更新数据状态
+  });
+  },[]);
+
+  return (
+    <>
+      <TitleCard title="Play Ground" topMargin="mt-2">
+        {medi_data ? <div>{medi_data['med']}</div>: <div>loading...</div>}
+      </TitleCard>
+    </>
+  );
 }
 
-export default InternalPage
+export default InternalPage;
