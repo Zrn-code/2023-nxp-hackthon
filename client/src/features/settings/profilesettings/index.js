@@ -29,9 +29,8 @@ function ProfileSettings(){
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <InputText labelTitle="Name" defaultValue="Zrn" updateFormValue={updateFormValue}/>
                     <InputText labelTitle="Email ID" defaultValue="nxp@gmail.com" updateFormValue={updateFormValue}/>
-                    <InputText labelTitle="Age" defaultValue="65" updateFormValue={updateFormValue}/>
+                    <InputText labelTitle="Age" defaultValue="19" updateFormValue={updateFormValue}/>
                     <InputText labelTitle="City" defaultValue="Hsinchu City" updateFormValue={updateFormValue}/>
-                    <TextAreaInput labelTitle="About" defaultValue="Doing what I love, part time traveller" updateFormValue={updateFormValue}/>
                 </div>
                 <div className="divider" ></div>
 

@@ -36,29 +36,29 @@ const routes = [
   },
   {
     path: '/app/self-history', // url
-    icon: <CurrencyDollarIcon className={iconClasses}/>, // icon component
+    icon: <UserIcon className={iconClasses}/>, // icon component
     name: 'Self History', // name that appear in Sidebar
   },
   {
     path: '/app/doseplan', // url
     icon: <TableCellsIcon className={iconClasses}/>, // icon component
     name: 'Dose Plan', // name that appear in Sidebar
-  },
+  },/*
   {
     path: '/app/charts', // url
     icon: <ChartBarIcon className={iconClasses}/>, // icon component
     name: 'Analytics', // name that appear in Sidebar
-  },/*
+  },
   {
     path: '/app/integration', // url
     icon: <BoltIcon className={iconClasses}/>, // icon component
     name: 'Integration', // name that appear in Sidebar
   },*/
-  {
+  /*{
     path: '/app/calendar', // url
     icon: <CalendarDaysIcon className={iconClasses}/>, // icon component
     name: 'Calendar', // name that appear in Sidebar
-  },
+  },*/
   /*
   {
     path: '', //no url needed as this has submenu
@@ -110,7 +110,7 @@ const routes = [
       {
         path: '/app/settings-team', // url
         icon: <UsersIcon className={submenuIconClasses}/>, // icon component
-        name: 'Team Members', // name that appear in Sidebar
+        name: 'Family Members', // name that appear in Sidebar
       },
     ]
   },/*

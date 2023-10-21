@@ -42,8 +42,8 @@ function LineChart(){
   datasets: [
     {
       fill: true,
-      label: 'MAU',
-      data: labels.map(() => { return Math.random() * 100 + 500 }),
+      label: 'Taken',
+      data: labels.map(() => { return Math.random() * 10 + 50 }),
       borderColor: 'rgb(53, 162, 235)',
       backgroundColor: 'rgba(53, 162, 235, 0.5)',
     },
@@ -52,7 +52,7 @@ function LineChart(){
   
 
     return(
-      <TitleCard title={"Montly Active Users (in K)"}>
+      <TitleCard title={"Montly Taken"}>
           <Line data={data} options={options}/>
       </TitleCard>
     )

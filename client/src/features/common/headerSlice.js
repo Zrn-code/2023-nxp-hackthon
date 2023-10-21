@@ -4,7 +4,7 @@ export const headerSlice = createSlice({
     name: 'header',
     initialState: {
         pageTitle: "Home",  // current page title state management
-        noOfNotifications : 10,  // no of unread notifications
+        noOfNotifications : 2,  // no of unread notifications
         newNotificationMessage : "",  // message of notification to be shown
         newNotificationStatus : 1,   // to check the notification type -  success/ error/ info
     },

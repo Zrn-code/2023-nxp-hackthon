@@ -23,44 +23,253 @@ module.exports = Object.freeze({
           "name": "Brian",
           "avatar": "https://reqres.in/img/faces/1-image.jpg",
           "amount": 1,
-          "date": "2023-10-20T23:59:59.999Z",
+          "date": "2023-10-20",
           "medicine": "Aspirin"
         },
         {
           "name": "Johnson",
           "avatar": "https://reqres.in/img/faces/4-image.jpg",
           "amount": 1,
-          "date": "2023-10-19T23:59:59.999Z",
+          "date": "2023-10-19",
           "medicine": "Ibuprofen"
         },
         {
           "name": "Max",
           "avatar": "https://reqres.in/img/faces/3-image.jpg",
           "amount": 1,
-          "date": "2023-10-19T23:59:59.999Z",
+          "date": "2023-10-19",
           "medicine": "Acetaminophen"
         },
         {
           "name": "Brian",
           "avatar": "https://reqres.in/img/faces/1-image.jpg",
           "amount": 2,
-          "date": "2023-10-18T23:59:59.999Z",
+          "date": "2023-10-18",
           "medicine": "Penicillin"
         },
         {
           "name": "Johnson",
           "avatar": "https://reqres.in/img/faces/4-image.jpg",
           "amount": 3,
-          "date": "2023-10-17T23:59:59.999Z",
+          "date": "2023-10-17",
           "medicine": "Amoxicillin"
         },
         {
           "name": "Max",
           "avatar": "https://reqres.in/img/faces/3-image.jpg",
           "amount": 4,
-          "date": "2023-10-16T23:59:59.999Z",
+          "date": "2023-10-16",
           "medicine": "Erythromycin"
-        }
-      ]
-      
+        },
+        {
+            "name": "Brian",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg",
+            "amount": 1,
+            "date": "2023-10-20",
+            "medicine": "Aspirin"
+          },
+          {
+            "name": "Johnson",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg",
+            "amount": 1,
+            "date": "2023-10-19",
+            "medicine": "Ibuprofen"
+          },
+          {
+            "name": "Max",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg",
+            "amount": 1,
+            "date": "2023-10-19",
+            "medicine": "Acetaminophen"
+          },
+          {
+            "name": "Brian",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg",
+            "amount": 2,
+            "date": "2023-10-18",
+            "medicine": "Penicillin"
+          },
+          {
+            "name": "Johnson",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg",
+            "amount": 3,
+            "date": "2023-10-17",
+            "medicine": "Amoxicillin"
+          },
+          {
+            "name": "Max",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg",
+            "amount": 4,
+            "date": "2023-10-16",
+            "medicine": "Erythromycin"
+          },
+          {
+            "name": "Brian",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg",
+            "amount": 1,
+            "date": "2023-10-20",
+            "medicine": "Aspirin"
+          },
+          {
+            "name": "Johnson",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg",
+            "amount": 1,
+            "date": "2023-10-19",
+            "medicine": "Ibuprofen"
+          },
+          {
+            "name": "Max",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg",
+            "amount": 1,
+            "date": "2023-10-19",
+            "medicine": "Acetaminophen"
+          },
+          {
+            "name": "Brian",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg",
+            "amount": 2,
+            "date": "2023-10-18",
+            "medicine": "Penicillin"
+          },
+          {
+            "name": "Johnson",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg",
+            "amount": 3,
+            "date": "2023-10-17",
+            "medicine": "Amoxicillin"
+          },
+          {
+            "name": "Max",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg",
+            "amount": 4,
+            "date": "2023-10-16",
+            "medicine": "Erythromycin"
+          }
+      ],
+    DOSE_RESTORAGE: [
+          {
+            "name": "Erythromycin",
+            "amount": "10",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Amoxicillin",
+            "amount": "10",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Penicillin",
+            "amount": "10",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Acetaminophen",
+            "amount": "10",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Ibuprofen",
+            "amount": "20",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Aspirin",
+            "amount": "30",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Morphine",
+            "amount": "5",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Lisinopril",
+            "amount": "15",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Ciprofloxacin",
+            "amount": "8",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Prednisone",
+            "amount": "12",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Paracetamol",
+            "amount": "25",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Doxycycline",
+            "amount": "7",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Atorvastatin",
+            "amount": "9",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Metformin",
+            "amount": "11",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Warfarin",
+            "amount": "14",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Simvastatin",
+            "amount": "6",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Losartan",
+            "amount": "17",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Tetracycline",
+            "amount": "3",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Furosemide",
+            "amount": "22",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          },
+          {
+            "name": "Hydrochlorothiazide",
+            "amount": "18",
+            "expire": "2024-10-16",
+            "store": "2023-10-16"
+          }
+        ]
+            
 });
+
+
+

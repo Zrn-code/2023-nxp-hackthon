@@ -21,9 +21,10 @@ const TopSideButtons = () => {
 
 
 const TEAM_MEMBERS = [
-    {name : "Johnson", avatar : "https://reqres.in/img/faces/1-image.jpg", email : "alex@dashwind.com", role : "Owner", joinedOn : moment(new Date()).add(-5*1, 'days').format("DD MMM YYYY"), lastActive : "5 hr ago"},
-    {name : "Max", avatar : "https://reqres.in/img/faces/2-image.jpg", email : "ereena@dashwind.com", role : "Admin", joinedOn : moment(new Date()).add(-5*2, 'days').format("DD MMM YYYY"), lastActive : "15 min ago"},
-    {name : "Brian", avatar : "https://reqres.in/img/faces/3-image.jpg", email : "jhon@dashwind.com", role : "Admin", joinedOn : moment(new Date()).add(-5*3, 'days').format("DD MMM YYYY"), lastActive : "20 hr ago"},
+    {name : "Johnson", avatar : "https://reqres.in/img/faces/4-image.jpg", email : "johnson@dashwind.com", role : "Admin", joinedOn : moment(new Date()).add(-5*1, 'days').format("DD MMM YYYY"), lastActive : "5 hr ago",age:"65"},
+    {name : "Max", avatar : "https://reqres.in/img/faces/2-image.jpg", email : "max@dashwind.com", role : "Admin", joinedOn : moment(new Date()).add(-5*2, 'days').format("DD MMM YYYY"), lastActive : "15 min ago",age:"25"},
+    {name : "Brian", avatar : "https://reqres.in/img/faces/1-image.jpg", email : "brian@dashwind.com", role : "Owner", joinedOn : moment(new Date()).add(-5*4, 'days').format("DD MMM YYYY"), lastActive : "20 hr ago",age:"35"},
+    {name: "Zrn",avatar: "https://zrn-code.github.io/images/avatar.jpg",email: "nxp@gmail",role: "Manager",joinedOn: moment(new Date()).add(-2, 'days').format("DD MMM YYYY"), lastActive : "20 hr ago",age:"19"},
 ]
 
 function Team(){
@@ -42,7 +43,7 @@ function Team(){
     return(
         <>
             
-            <TitleCard title="Active Members" topMargin="mt-2" TopSideButtons={<TopSideButtons />}>
+            <TitleCard title="Family Members" topMargin="mt-2" TopSideButtons={<TopSideButtons />}>
 
                 {/* Team Member list in table format loaded constant */}
             <div className="overflow-x-auto w-full">
@@ -50,10 +51,12 @@ function Team(){
                     <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Email Id</th>
+                        <th>Age</th>
+
+                        <th>Email Id</th> 
                         <th>Joined On</th>
                         <th>Role</th>
-                        <th>Last Active</th>
+
                     </tr>
                     </thead>
                     <tbody>
@@ -73,10 +76,11 @@ function Team(){
                                             </div>
                                         </div>
                                     </td>
+                                    <td>{l.age}</td>
                                     <td>{l.email}</td>
                                     <td>{l.joinedOn}</td>
                                     <td>{getRoleComponent(l.role)}</td>
-                                    <td>{l.lastActive}</td>
+
                                     </tr>
                                 )
                             })

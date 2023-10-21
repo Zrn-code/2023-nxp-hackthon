@@ -26,14 +26,14 @@ function DoughnutChart(){
         },
       };
       
-      const labels = ['Electronics', 'Home Applicances', 'Beauty', 'Furniture', 'Watches', 'Apparel'];
+      const labels = ['Headache', 'Fever', 'Infections', 'Pain', 'Inflammation', 'Heart Health','Allergies'];
       
       const data = {
         labels,
         datasets: [
             {
                 label: '# of Orders',
-                data: [122, 219, 30, 51, 82, 13],
+                data: [200, 200, 195, 70, 60, 50,20],
                 backgroundColor: [
                   'rgba(255, 99, 132, 0.8)',
                   'rgba(54, 162, 235, 0.8)',
@@ -41,6 +41,7 @@ function DoughnutChart(){
                   'rgba(75, 192, 192, 0.8)',
                   'rgba(153, 102, 255, 0.8)',
                   'rgba(255, 159, 64, 0.8)',
+                  'rgba(255, 100, 255, 0.8)',
                 ],
                 borderColor: [
                   'rgba(255, 99, 132, 1)',
@@ -49,6 +50,7 @@ function DoughnutChart(){
                   'rgba(75, 192, 192, 1)',
                   'rgba(153, 102, 255, 1)',
                   'rgba(255, 159, 64, 1)',
+                  'rgba(255, 100, 255, 1)',
                 ],
                 borderWidth: 1,
               }

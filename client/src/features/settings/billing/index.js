@@ -7,21 +7,21 @@ import { showNotification } from '../../common/headerSlice'
 
 
 const HISOTRYS = [
-    {amount : "1", description : "Product usages", status : "Waiting", generatedOn : moment(new Date()).add(-30*1, 'hours'),  paidOn : "-"},
+    {amount : "1", description : "Acetaminophen", status : "Waiting", generatedOn : moment(new Date()).add(-30*1, 'hours'),  paidOn : "-"},
 
-    {amount : "1", description : "Product usages", status : "Waiting", generatedOn : moment(new Date()).add(-30*2, 'hours'), paidOn : "-"},
+    {amount : "1", description : "Acetaminophen", status : "Waiting", generatedOn : moment(new Date()).add(-30*2, 'hours'), paidOn : "-"},
 
-    {amount : "1", description : "Product usages", status : "Taken", generatedOn : moment(new Date()).add(-30*3, 'days'), paidOn : moment(new Date()).add(-24*2, 'days')},
+    {amount : "1", description : "Acetaminophen", status : "Taken", generatedOn : moment(new Date()).add(-30*3, 'days'), paidOn : moment(new Date()).add(-24*2, 'days')},
 
-    {amount : "1", description : "Product usages", status : "Taken", generatedOn : moment(new Date()).add(-30*4, 'days'), paidOn : moment(new Date()).add(-24*3, 'days')},
+    {amount : "1", description : "Acetaminophen", status : "Taken", generatedOn : moment(new Date()).add(-30*4, 'days'), paidOn : moment(new Date()).add(-24*3, 'days')},
 
-    {amount : "1", description : "Product usages", status : "Taken", generatedOn : moment(new Date()).add(-30*5, 'days'), paidOn : moment(new Date()).add(-24*4, 'days')},
+    {amount : "1", description : "Acetaminophen", status : "Taken", generatedOn : moment(new Date()).add(-30*5, 'days'), paidOn : moment(new Date()).add(-24*4, 'days')},
 
-    {amount : "1", description : "Product usages", status : "Taken", generatedOn : moment(new Date()).add(-30*6, 'days'), paidOn : moment(new Date()).add(-24*5, 'days')},
+    {amount : "1", description : "Acetaminophen", status : "Taken", generatedOn : moment(new Date()).add(-30*6, 'days'), paidOn : moment(new Date()).add(-24*5, 'days')},
 
-    {amount : "1", description : "Product usages", status : "Taken", generatedOn : moment(new Date()).add(-30*7, 'days'), paidOn : moment(new Date()).add(-24*6, 'days')},
+    {amount : "1", description : "Acetaminophen", status : "Taken", generatedOn : moment(new Date()).add(-30*7, 'days'), paidOn : moment(new Date()).add(-24*6, 'days')},
 
-    {amount : "1", description : "Product usages", status : "Taken", generatedOn : moment(new Date()).add(-30*8, 'days'), paidOn : moment(new Date()).add(-24*7, 'days')},
+    {amount : "1", description : "Acetaminophen", status : "Taken", generatedOn : moment(new Date()).add(-30*8, 'days'), paidOn : moment(new Date()).add(-24*7, 'days')},
 
 
 ]
@@ -52,10 +52,8 @@ function Billing(){
                         <th>Description</th>
                         <th>Amount</th>
                         <th>Status</th>
-                        <th>Invoice Taken On</th>
-                        <th>dd
-                            
-                        </th>
+                        <th>Take Date</th>
+                        <th>Take Time</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -68,8 +66,8 @@ function Billing(){
                                         <td>{l.description}</td>
                                         <td>{l.amount}</td>
                                         <td>{getPaymentStatus(l.status)}</td>
-                                        <td>{l.paidOn.format("ll")}</td>
-                                        <td>{l.paidOn.format("LT")}</td>
+                                        <td>{l.paidOn ==="-"?"-":l.paidOn.format("ll")}</td>
+                                        <td>{l.paidOn ==="-"?"-":l.paidOn.format("LT")}</td>
                                     </tr>
                                 )
                             })

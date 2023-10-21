@@ -1,25 +1,63 @@
 import TitleCard from "../../../components/Cards/TitleCard"
 
 const userSourceData = [
-    {source : "Facebook Ads", count : "26,345", conversionPercent : 10.2},
-    {source : "Google Ads", count : "21,341", conversionPercent : 11.7},
-    {source : "Instagram Ads", count : "34,379", conversionPercent : 12.4},
-    {source : "Affiliates", count : "12,359", conversionPercent : 20.9},
-    {source : "Organic", count : "10,345", conversionPercent : 10.3},
+    {
+        "source": "Acetaminophen",
+        "count": "150",
+        "tags": ["Headache", "Fever"]
+    },
+    {
+        "source": "Penicillin",
+        "count": "100",
+        "tags": ["Infections"]
+    },
+    {
+        "source": "Erythromycin",
+        "count": "80",
+        "tags": ["Infections"]
+    },
+    {
+        "source": "Ibuprofen",
+        "count": "60",
+        "tags": ["Pain", "Inflammation"]
+    },
+    {
+        "source": "Aspirin",
+        "count": "50",
+        "tags": ["Headache", "Fever", "Heart Health"]
+    },
+    {
+        "source": "Prednisone",
+        "count": "20",
+        "tags": ["Inflammation", "Allergies"]
+    },
+    {
+        "source": "Ciprofloxacin",
+        "count": "15",
+        "tags": ["Infections"]
+    },
+    {
+        "source": "Morphine",
+        "count": "10",
+        "tags": ["Pain"]
+    },
+
 ]
+
 
 function UserChannels(){
     return(
-        <TitleCard title={"User Signup Source"}>
+        <TitleCard title={"Most Used Medicine"}>
              {/** Table Data */}
              <div className="overflow-x-auto">
                 <table className="table w-full">
                     <thead>
                     <tr>
-                        <th></th>
-                        <th className="normal-case">Source</th>
-                        <th className="normal-case">No of Users</th>
-                        <th className="normal-case">Conversion</th>
+                        <th className="normal-case">Rank</th>
+                        <th className="normal-case">Medicine</th>
+                        <th className="normal-case">Amount</th>
+                        <th className="normal-case">Tags</th>
+
                     </tr>
                     </thead>
                     <tbody>
@@ -30,7 +68,15 @@ function UserChannels(){
                                         <th>{k+1}</th>
                                         <td>{u.source}</td>
                                         <td>{u.count}</td>
-                                        <td>{`${u.conversionPercent}%`}</td>
+                                        <td>
+                                        {u.tags.map((tag, index) => (
+                                        
+                                        <div key={index} className="badge badge-neutral">
+                                            {tag}
+                                        </div>
+                ))}
+            </td>
+                                       
                                     </tr>
                                 )
                             })
