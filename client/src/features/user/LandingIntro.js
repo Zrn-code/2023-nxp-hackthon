@@ -11,7 +11,7 @@ function LandingIntro(){
 
               <h1 className='text-3xl text-center font-bold '><img src="/logo192.png" className="w-12 inline-block mr-2 mask mask-circle" alt="Medimind-logo" />MediMind</h1>
 
-                <div className="text-center mt-12"><img src="./intro.png" alt="Medimind Admin Template" className="w-48 inline-block"></img></div>
+                {/*<div className="text-center mt-12"><img src="./intro.png" alt="Medimind Admin Template" className="w-48 inline-block"></img></div>*/}
               
               {/* Importing pointers component */}
               <TemplatePointers />

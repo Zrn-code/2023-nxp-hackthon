@@ -9,6 +9,7 @@ import { openRightDrawer } from '../features/common/rightDrawerSlice';
 import { RIGHT_DRAWER_TYPES } from '../utils/globalConstantUtil'
 
 import { NavLink,  Routes, Link , useLocation} from 'react-router-dom'
+import CameraIcon from '@heroicons/react/24/outline/CameraIcon'
 
 
 function Header(){
@@ -70,12 +71,14 @@ function Header(){
 
 
             {/* Light and dark theme selection toogle **/}
+            {/*}
             <label className="swap ">
                 <input type="checkbox"/>
                 <SunIcon data-set-theme="light" data-act-class="ACTIVECLASS" className={"fill-current w-6 h-6 "+(currentTheme === "dark" ? "swap-on" : "swap-off")}/>
                 <MoonIcon data-set-theme="dark" data-act-class="ACTIVECLASS" className={"fill-current w-6 h-6 "+(currentTheme === "light" ? "swap-on" : "swap-off")} />
             </label>
-
+            */}
+            <Link to="blank"><CameraIcon className='h-6 w-6'></CameraIcon></Link>
 
                 {/* Notification icon */}
                 <button className="btn btn-ghost ml-4  btn-circle" onClick={() => openNotification()}>

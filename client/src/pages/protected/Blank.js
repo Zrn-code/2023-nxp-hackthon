@@ -12,7 +12,7 @@ function InternalPage() {
   const [medi_data, setData] = useState(null); // 初始化数据状态为null
 
   useEffect(() => {
-    dispatch(setPageTitle({ title: "Page Title" }));
+    dispatch(setPageTitle({ title: "AI Demo" }));
   }, []);
 
   useEffect(() => {
@@ -28,8 +28,15 @@ function InternalPage() {
 
   return (
     <>
-      <TitleCard title="Play Ground" topMargin="mt-2">
-        {medi_data ? <div>{medi_data['med']}</div>: <div>loading...</div>}
+      <TitleCard title="AI Compute Result" topMargin="mt-2">
+        
+        {medi_data ? <div className="flex flex-col w-full border-opacity-50">
+          <div className="grid h-20 flex-grow card bg-base-300 rounded-box text-xl place-items-center font-extrabold">{medi_data["med"]}</div>
+          <div className="divider"></div>
+          <div className="grid  flex-grow card bg-base-300 rounded-box place-items-center">{medi_data["request"].split('\n').map((part, index) => (
+              <div className='mt-2' key={index}>{part}</div>
+            ))}</div>
+        </div>: <div>loading...</div>}
       </TitleCard>
     </>
   );
